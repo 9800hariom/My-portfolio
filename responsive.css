@@ -1,0 +1,150 @@
+@media screen and (max-width:1050px) {
+    header{
+        width: 100%;
+    }
+    .header-nav-link  .navmenu{
+        display: block;
+    position: fixed;
+    right: -100%;
+    padding: 20px;
+    /* background: olive; */
+    background: rgb(29, 161, 242);
+    top:0px;
+    bottom: 0;
+    width: 200px;
+    z-index: 100;
+    padding-top: 60px;
+    transition: all .5s linear;
+
+    }
+    .header-nav-link .navmenu li  a{
+        color: white;
+    }
+    .header-nav-link .navmenu li  {
+        padding: 10px ;
+    }
+ 
+    .hamburger{
+        display: block;
+        cursor: pointer;
+
+    }
+    .hamburger i {
+        font-size: 2rem;
+    }
+    .close-nav{
+        display: block;
+        position: absolute;
+        right:10px;
+        top:10px;
+        z-index: 10;
+        cursor: pointer;
+        
+    }
+    .close-nav i {
+         font-size: 2rem;
+         color:white;
+    }
+    .header-nav-link .navmenu li::after{
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        bottom: 0;
+        background: rgb(0, 255, 191);
+        left: 0;
+        transition: all .3s linear;
+    }
+  
+    .header-nav-link .navmenu li:hover a{
+    color:rgb(0, 255, 191);
+    } 
+
+    .container{
+    flex-direction: column;
+    }
+    section{
+        padding:  20px;
+        
+    }
+    .container{
+        width: 100%;
+        gap:60px;
+        padding: 0;
+        
+    }
+    .contact-section .container{
+padding: 60px 10px;
+    }
+    .image-box{
+    
+        width: 300px;
+        height: 300px;
+    }
+    .a-right{
+        width: 100%;
+        padding:5px 20px;
+    }
+    .top{
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    
+}
+
+
+@media screen and (max-width:600px) {
+    .exp-box{
+        flex-direction: column;
+        
+    }
+    .exp-box{
+     align-items: center;
+    }
+    .experience-box{
+     width: 100%;
+
+    }
+    
+    .contact-box{
+   flex-direction: column;
+        
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+    .a-letf{
+        width: 100%;
+    }
+    .a-letf .image-box{
+   width: 100%;
+        
+    }
+  
+    .project-box{
+width:100%;
+padding: 10px ;
+    }
+    .project-content .buttonbox {
+   flex-wrap: wrap;
+   gap: 0px;
+   
+
+    }
+    .contact-box{
+     width: 100%;
+     
+        
+    }
+    .c-box a{
+      flex-direction: column;
+    }
+    .left .image-box{
+        border-radius: 50%;
+        overflow: hidden;
+        width: 250px;
+        height: 250px;
+    }
+    
+}
